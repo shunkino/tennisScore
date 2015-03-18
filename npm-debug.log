@@ -1,115 +1,36 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.28
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
 4 verbose node symlink /usr/local/bin/node
-5 verbose readDependencies using package.json deps
-6 verbose install where, deps [ '/Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer',
-6 verbose install   [ 'body-parser',
-6 verbose install     'cookie-parser',
-6 verbose install     'debug',
-6 verbose install     'ect',
-6 verbose install     'express',
-6 verbose install     'morgan',
-6 verbose install     'serve-favicon' ] ]
-7 info preinstall tennisScorer@0.0.1
-8 verbose readDependencies using package.json deps
-9 verbose already installed skipping debug@~0.7.4 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-10 verbose already installed skipping body-parser@~1.0.0 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-11 verbose already installed skipping cookie-parser@~1.0.1 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-12 verbose already installed skipping ect@^0.5.9 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-13 verbose already installed skipping express@~4.2.0 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-14 verbose already installed skipping morgan@~1.0.0 /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-15 verbose cache add [ 'serve-favicon@~1.0.0', null ]
-16 verbose cache add name=undefined spec="serve-favicon@~1.0.0" args=["serve-favicon@~1.0.0",null]
-17 verbose parsed url { protocol: null,
-17 verbose parsed url   slashes: null,
-17 verbose parsed url   auth: null,
-17 verbose parsed url   host: null,
-17 verbose parsed url   port: null,
-17 verbose parsed url   hostname: null,
-17 verbose parsed url   hash: null,
-17 verbose parsed url   search: null,
-17 verbose parsed url   query: null,
-17 verbose parsed url   pathname: 'serve-favicon@~1.0.0',
-17 verbose parsed url   path: 'serve-favicon@~1.0.0',
-17 verbose parsed url   href: 'serve-favicon@~1.0.0' }
-18 verbose cache add name="serve-favicon" spec="~1.0.0" args=["serve-favicon","~1.0.0"]
-19 verbose parsed url { protocol: null,
-19 verbose parsed url   slashes: null,
-19 verbose parsed url   auth: null,
-19 verbose parsed url   host: null,
-19 verbose parsed url   port: null,
-19 verbose parsed url   hostname: null,
-19 verbose parsed url   hash: null,
-19 verbose parsed url   search: null,
-19 verbose parsed url   query: null,
-19 verbose parsed url   pathname: '~1.0.0',
-19 verbose parsed url   path: '~1.0.0',
-19 verbose parsed url   href: '~1.0.0' }
-20 verbose addNamed [ 'serve-favicon', '~1.0.0' ]
-21 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
-22 silly lockFile e5b24425-serve-favicon-1-0-0 serve-favicon@~1.0.0
-23 verbose lock serve-favicon@~1.0.0 /Users/kinoshitashun/.npm/e5b24425-serve-favicon-1-0-0.lock
-24 silly addNameRange { name: 'serve-favicon',
-24 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
-24 silly addNameRange   hasData: false }
-25 verbose request where is /serve-favicon
-26 verbose request registry https://registry.npmjs.org/
-27 verbose request id 9bb036add919e7aa
-28 verbose url raw /serve-favicon
-29 verbose url resolving [ 'https://registry.npmjs.org/', './serve-favicon' ]
-30 verbose url resolved https://registry.npmjs.org/serve-favicon
-31 verbose request where is https://registry.npmjs.org/serve-favicon
-32 info trying registry request attempt 1 at 08:39:48
-33 verbose etag "57J1WZEFR0J53TPZKI3RKHJ74"
-34 http GET https://registry.npmjs.org/serve-favicon
-35 http 304 https://registry.npmjs.org/serve-favicon
-36 silly registry.get cb [ 304,
-36 silly registry.get   { date: 'Wed, 25 Feb 2015 23:39:47 GMT',
-36 silly registry.get     server: 'Apache',
-36 silly registry.get     via: '1.1 varnish',
-36 silly registry.get     'last-modified': 'Wed, 25 Feb 2015 23:39:48 GMT',
-36 silly registry.get     'cache-control': 'max-age=60',
-36 silly registry.get     etag: '"57J1WZEFR0J53TPZKI3RKHJ74"',
-36 silly registry.get     age: '0',
-36 silly registry.get     'x-served-by': 'cache-nrt6133-NRT',
-36 silly registry.get     'x-cache': 'HIT',
-36 silly registry.get     'x-cache-hits': '1',
-36 silly registry.get     'x-timer': 'S1424907587.944600,VS0,VE660',
-36 silly registry.get     vary: 'Accept',
-36 silly registry.get     'content-length': '0',
-36 silly registry.get     'keep-alive': 'timeout=10, max=50',
-36 silly registry.get     connection: 'Keep-Alive' } ]
-37 verbose etag https://registry.npmjs.org/serve-favicon from cache
-38 silly addNameRange number 2 { name: 'serve-favicon',
-38 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
-38 silly addNameRange   hasData: true }
-39 silly addNameRange versions [ 'serve-favicon',
-39 silly addNameRange   [ '2.0.0',
-39 silly addNameRange     '2.0.1',
-39 silly addNameRange     '2.1.0',
-39 silly addNameRange     '2.1.1',
-39 silly addNameRange     '2.1.2',
-39 silly addNameRange     '2.1.3',
-39 silly addNameRange     '2.1.4',
-39 silly addNameRange     '2.1.5',
-39 silly addNameRange     '2.1.6',
-39 silly addNameRange     '2.1.7',
-39 silly addNameRange     '2.2.0' ] ]
-40 silly lockFile e5b24425-serve-favicon-1-0-0 serve-favicon@~1.0.0
-41 silly lockFile e5b24425-serve-favicon-1-0-0 serve-favicon@~1.0.0
-42 error notarget No compatible version found: serve-favicon@'>=1.0.0-0 <1.1.0-0'
-42 error notarget Valid install targets:
-42 error notarget ["2.0.0","2.0.1","2.1.0","2.1.1","2.1.2","2.1.3","2.1.4","2.1.5","2.1.6","2.1.7","2.2.0"]
-42 error notarget
-42 error notarget This is most likely not a problem with npm itself.
-42 error notarget In most cases you or one of your dependencies are requesting
-42 error notarget a package version that doesn't exist.
-43 error System Darwin 13.4.0
-44 error command "node" "/usr/local/bin/npm" "install"
-45 error cwd /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
-46 error node -v v0.10.28
-47 error npm -v 1.4.28
-48 error code ETARGET
-49 verbose exit [ 1, true ]
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart tennisScorer@0.0.1
+7 info start tennisScorer@0.0.1
+8 verbose unsafe-perm in lifecycle true
+9 info tennisScorer@0.0.1 Failed to exec start script
+10 verbose stack Error: tennisScorer@0.0.1 start: `node ./bin/www`
+10 verbose stack Exit status 1
+10 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+10 verbose stack     at EventEmitter.emit (events.js:110:17)
+10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+10 verbose stack     at ChildProcess.emit (events.js:110:17)
+10 verbose stack     at maybeClose (child_process.js:1008:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+11 verbose pkgid tennisScorer@0.0.1
+12 verbose cwd /Users/kinoshitashun/GoogleDrive/workspace/MongoDB/tennisScorer
+13 error Darwin 13.4.0
+14 error argv "node" "/usr/local/bin/npm" "start"
+15 error node v0.12.0
+16 error npm  v2.5.1
+17 error code ELIFECYCLE
+18 error tennisScorer@0.0.1 start: `node ./bin/www`
+18 error Exit status 1
+19 error Failed at the tennisScorer@0.0.1 start script 'node ./bin/www'.
+19 error This is most likely a problem with the tennisScorer package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     node ./bin/www
+19 error You can get their info via:
+19 error     npm owner ls tennisScorer
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]

@@ -7,12 +7,14 @@
   },
   "dependencies": {
     "body-parser": "~1.0.0",
+    "connect-mongo": "*",
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "ect": "^0.5.9",
     "express": "~4.2.0",
+    "express-session": "^1.10.3",
+    "mongoose": "^3.8.24",
     "morgan": "~1.0.0",
-    "serve-favicon": "*",
-	"mongoose": "*"
+    "serve-favicon": "*"
   }
 }
