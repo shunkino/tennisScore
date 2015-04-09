@@ -48,14 +48,23 @@ var loginCheck = function(req, res, next) {
 		res.redirect('/login');
 	}
 }
-
+//getように同じURLで新規ログイン/登録できるようにする。→エラーになることを防ぐ。
 app.get('/', function(req, res) {
 	res.render('login', {title:"LOGIN"});
 });
-app.get('/login', routes.login);
+app.get('/login', function(req, res){
+	res.redirect('/');
+});
+app.get('/add', function(req, res){
+	res.render('newGame');
+});
+
+app.post('/login', routes.login);
 app.post('/add', routes.add);
 app.get('/after', loginCheck, function(req, res) {
-	res.render('login', {title: "login 成功！"});
+	var name = req.session.user;
+	console.log(name);
+	res.render('after', {title: "login後画面", username: name});
 });
 app.get('/tennis/result', function(req, res) {
 	tennis.find({}, function(err, results) {

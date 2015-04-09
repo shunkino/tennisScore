@@ -1,4 +1,23 @@
+<!DOCTYPE html>
 <% extend 'layout' %>
-<h1><%= @title %><h1>
-<p>Welcome to <%= @title %></p>
-<p>this is login screen!!!<p>
+<html>
+<head>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<header>
+		<h1><%= @title %></h1>		
+		<p>Welcome to <%= @title %></p>
+	</header>
+	<h2>ログイン</h2>
+	<form action="/login" method="post" accept-charset="utf-8">
+		<input type="text" placeholder="ID" name="ID"/><br>
+		<input type="password" placeholder="Password" name="password"/>
+		<input type="submit" value="Login">
+	</form>
+	<footer>
+		
+	</footer>
+</body>
+</html>
+

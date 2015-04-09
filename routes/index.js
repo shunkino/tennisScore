@@ -9,24 +9,27 @@ exports.add = function(req, res) {
 			console.log(err);
 			res.redirect('back');
 		}else {
+			console.log("adding user succeed.");
 			res.redirect('/');
 		}
 	});
 }
 
 exports.login = function(req, res) {
-	var identification = req.query.ID;
-	var password = req.query.password;
+	var identification = req.body.ID;
+	var password = req.body.password;
 	var query = { "ID": identification, "password": password }
+	console.log(query);
 	User.find(query, function(err, data) {
 		if(err) {
 			console.log(err);
 		}
 		if(data == "") {
-			res.render('login');
+			res.render('login', {title: "login 失敗画面"});
 		}else {
+			console.log("login has been succeeded");
 			req.session.user = identification;
-			res.redirect('/');
+			res.redirect('/after');
 		}
 	});
 }
