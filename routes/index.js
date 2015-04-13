@@ -3,6 +3,7 @@ var router = express.Router();
 var User = require('../models/tennis');
 
 exports.add = function(req, res) {
+	console.log(req.body);
 	var newUser = new User(req.body);
 	newUser.save(function(err) {
 		if(err) {
@@ -17,8 +18,8 @@ exports.add = function(req, res) {
 
 exports.login = function(req, res) {
 	var identification = req.body.ID;
-	var password = req.body.password;
-	var query = { "ID": identification, "password": password }
+	var password = req.body.Password;
+	var query = { "ID": identification, "Password": password };
 	console.log(query);
 	User.find(query, function(err, data) {
 		if(err) {

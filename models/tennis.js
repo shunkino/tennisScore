@@ -3,8 +3,8 @@ mongo.connect('mongodb://localhost/tennisScorer');
 
 var schema = mongo.Schema;
 var Tennis = mongo.model('tennis', new schema({
-	id: String,
-	pass: String,
+	ID: String,
+	Password: String,
 	createdAt: {type: Date, default: Date.now}
 	})
 );

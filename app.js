@@ -20,7 +20,7 @@ app.use(session({
 	resave: true,
 	secret: 'himitsu',
 	store: new MongoStore({
-		db: 'tennis',
+		db: 'sessions',
 		host: 'localhost',
 		clear_interval: 60 * 60
 	}),

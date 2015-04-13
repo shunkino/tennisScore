@@ -11,9 +11,44 @@
 	</header>
 	<h2>試合情報</h2>
 	<form action="/add" method="post" accept-charset="utf-8">
-		<input type="text" placeholder="ID" name="ID"/><br>
-		<input type="password" placeholder="Password" name="password"/>
-		<input type="submit" value="Login">
+		<table>
+			<tr>
+				<td>最大セット数を指定してください。</td>
+				<td>
+					<input type="radio" name="maxSet" id="maxSet1" value="1" />1	
+					<input type="radio" name="maxSet" id="maxSet3" value="3" checked />3	
+					<input type="radio" name="maxSet" id="maxSet5" value="5" />5	
+				</td>
+			</tr>
+			<tr>
+				<td>試合形式を選択してください。</td>
+				<td>	
+				<input type="radio" name="isDoubles" id="Doubles" value="Yes"/>ダブルス
+				<input type="radio" name="isDoubles" id="NotDoubles" value="No" checked />シングルス
+				</td>
+			</tr>
+			<tr>
+				<td>選手の名前を入力してください。</td>
+				<td><input id="player1" type="text" name="player1" placeholder="Player1 Name" ><input id="player1-2" type="text" name="player1-2" placeholder="Partner1 Name" >
+				<br /><input id="player2" type="text" name="player2" placeholder="Player2 Name" ><input id="player2-2" type="text" name="player2-2" placeholder="Partner2 Name" ></td>
+			</tr>
+			<tr>
+				<td>試合のIDを指定してください。</td>
+				<td>	
+					<input type="text" placeholder="ID" name="ID"/><br>
+				</td>
+			</tr>
+			<tr>
+				<td>編集用のパスワードを決めてください。</td>
+				<td>
+					<input type="password" placeholder="Password" name="Password"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		<input type="submit" value="登録">
 	</form>
 	<footer>
 		
