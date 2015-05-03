@@ -9,7 +9,14 @@
 		<h1><%= @title %></h1>		
 		<p>Welcome <%= @username %>!</p>
 	</header>
-	<h2>テストです。</h2>
+	<h2>試合の情報です。</h2>
+	<p>試合形式:<%= @doubles %> <%= @set %>セットマッチ<br>
+		<%= @player1 %> V.S. <%= @player2 %></p>
+	<div>
+		<input type="button" name="sideA" id="sideA" value="サイドAが得点" />
+		<input type="button" name="sideB" id="sideB" value="サイドBが得点" />
+	</div>
+	<h1><%= @sideA %> <%= @sideB %></h1>
 	<footer>
 		
 	</footer>

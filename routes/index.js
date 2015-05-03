@@ -8,10 +8,13 @@ exports.add = function(req, res) {
 	newUser.save(function(err) {
 		if(err) {
 			console.log(err);
+			console.log("重複しちゃったね！！")
 			res.redirect('back');
 		}else {
-			console.log("adding user succeed.");
-			res.redirect('/');
+			var identification = req.body.ID;
+			console.log("adding user succeed.");	
+			req.session.user = identification;
+			res.redirect('/after');
 		}
 	});
 }
